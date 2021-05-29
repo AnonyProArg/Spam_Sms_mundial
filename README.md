@@ -10,7 +10,7 @@ pkg install python -y
 
 git clone https://github.com/AnonyProArg/Spam_Sms_mundial.git
 
-cd TBomb
+cd SMS-SPAM.MUNDIAL
 
 ./SMS-SPAM.py
 
@@ -25,7 +25,7 @@ sudo apt install git
 
 git clone https://github.com/AnonyProArg/Spam_Sms_mundial.git
 
-cd TBomb
+cd SMS-SPAM.MUNDIAL
 
 bash ./SMS-SPAM.py
 
