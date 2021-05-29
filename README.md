@@ -27,5 +27,5 @@ git clone https://github.com/AnonyProArg/Spam_Sms_mundial.git
 
 cd SMS-SPAM.MUNDIAL
 
-bash ./SMS-SPAM.py
+bash SMS-SPAM.py
 
