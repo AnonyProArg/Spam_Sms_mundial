@@ -8,11 +8,11 @@ pkg install git -y
 
 pkg install python -y 
 
-git clone https://github.com/TheSpeedX/TBomb.git
+git clone https://github.com/AnonyProArg/Spam_Sms_mundial.git
 
 cd TBomb
 
-./TBomb.sh
+./SMS-SPAM.py
 
 
 
@@ -23,9 +23,9 @@ cd TBomb
 
 sudo apt install git
 
-git clone https://github.com/TheSpeedX/TBomb.git
+git clone https://github.com/AnonyProArg/Spam_Sms_mundial.git
 
 cd TBomb
 
-bash TBomb.sh
+bash ./SMS-SPAM.py
 
