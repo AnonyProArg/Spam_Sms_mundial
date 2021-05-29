@@ -370,7 +370,7 @@ except FileNotFoundError:
 
 
 __VERSION__ = get_version()
-__CONTRIBUTORS__ = ['SpeedX', 't0xic0der', 'scpketer', 'Stefan']
+    __CONTRIBUTORS__ = ['AnonyProArg(osea yo)', 'y nadie mas jaja']
 
 ALL_COLORS = [Fore.GREEN, Fore.RED, Fore.YELLOW, Fore.BLUE,
               Fore.MAGENTA, Fore.CYAN, Fore.WHITE]
@@ -388,21 +388,21 @@ SMS-Spam: se puede utilizar para muchos propósitos que incluyen:
 """
 
 parser = argparse.ArgumentParser(description=description,
-                                 epilog='Coded by SpeedX !!!')
+                                 epilog='Codigo: AnonyProArg !!!')
 parser.add_argument("-sms", "--sms", action="store_true",
-                    help="start TBomb with SMS Bomb mode")
+                    help="iniciar SMS con el modo SMS SPAM")
 parser.add_argument("-call", "--call", action="store_true",
-                    help="start TBomb with CALL Bomb mode")
+                    help="iniciar SMS con el modo LLAMDAS SPAM")
 parser.add_argument("-mail", "--mail", action="store_true",
-                    help="start TBomb with MAIL Bomb mode")
+                    help="iniciar SMS con el modo MAIL SPAM")
 parser.add_argument("-ascii", "--ascii", action="store_true",
-                    help="show only characters of standard ASCII set")
+                    help="mostrar solo caracteres del conjunto ASCII estándar")
 parser.add_argument("-u", "--update", action="store_true",
-                    help="update TBomb")
+                    help="Actuaizar SMS-Spam")
 parser.add_argument("-c", "--contributors", action="store_true",
-                    help="show current TBomb contributors")
+                    help="mostrar los contribuyentes actuales(nadie) de SMS-SPAM")
 parser.add_argument("-v", "--version", action="store_true",
-                    help="show current TBomb version")
+                    help="mostrar la versión actual de SMS-SPAM")
 
 
 if __name__ == "__main__":
