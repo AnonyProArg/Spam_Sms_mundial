@@ -114,6 +114,7 @@ do
     echo "5) Salir "
     read ch
     clear
+    cd /etc/VPS-ARG/herramientas/Spam_Sms_mundial
     if [ $ch -eq 1 ];then
         $PYTHON SMS-SPAM.py --sms
         exit
