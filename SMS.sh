@@ -29,7 +29,7 @@ banner() {
     if ! [ -x "$(command -v figlet)" ]; then
         echo 'Introduciendo Sms-Spam'
     else
-        figlet SMS
+        figlet SMS-SPAM
     fi
     if ! [ -x "$(command -v toilet)" ]; then
         echo -e "\e[4;34m Este SPAM fue creado por \e[1;32mAnonyProArg \e[0m"
