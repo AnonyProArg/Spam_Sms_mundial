@@ -433,7 +433,7 @@ if __name__ == "__main__":
             while (choice not in avail_choice):
                 clr()
                 bann_text()
-                print("Available Options:\n")
+                print("Opciones Disponibles:\n")
                 for key, value in avail_choice.items():
                     print("[ {key} ] {value} SPAM:".format(key=key,
                                                           value=value))
