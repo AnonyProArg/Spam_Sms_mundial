@@ -15,33 +15,33 @@ detect_distro() {
         elif [ "$OSTYPE" == "darwin" ]; then
             distro="darwin"
         else 
-            distro="invalid"
+            distro="Incorrecto"
         fi
     fi
 }
 
 pause() {
-    read -n1 -r -p "Press any key to continue..." key
+    read -n1 -r -p "Pulse cualquier tecla para continuar..." key
 }
 banner() {
     clear
     echo -e "\e[1;31m"
     if ! [ -x "$(command -v figlet)" ]; then
-        echo 'Introducing TBomb'
+        echo 'Introduciendo Sms-Spam'
     else
-        figlet TBomb
+        figlet SMS
     fi
     if ! [ -x "$(command -v toilet)" ]; then
-        echo -e "\e[4;34m This Bomber Was Created By \e[1;32mSpeedX \e[0m"
+        echo -e "\e[4;34m Este SPAM fue creado por \e[1;32mAnonyProArg \e[0m"
     else
         echo -e "\e[1;34mCreated By \e[1;34m"
-        toilet -f mono12 -F border SpeedX
+        toilet -f mono12 -F border AnonyProArg
     fi
-    echo -e "\e[1;34m For Any Queries Join Me!!!\e[0m"
-    echo -e "\e[1;32m           Telegram: https://t.me/TBombChat \e[0m"
-    echo -e "\e[4;32m   YouTube: https://www.youtube.com/c/SpeedXTech \e[0m"
+    echo -e "\e[1;34m Compatible con termux!!!\e[0m"
+    echo -e "\e[1;32m         Usar para molestar amigos \e[0m"
+    echo -e "\e[4;32m   Repositoros/AnonyProArg \e[0m"
     echo " "
-    echo "NOTE: Kindly move to the PIP version Of TBomb for more stability."
+    echo "NOTE: Por favor, muévase a la versión PIP de SMS-SPAM para mayor estabilidad.."
     echo " "
 }
 
@@ -80,9 +80,9 @@ install_deps(){
         done
         $PIP install -r requirements.txt
     else
-        echo "We could not install dependencies."
-        echo "Please make sure you have git, python3, pip3 and requirements installed."
-        echo "Then you can execute bomber.py ."
+        echo "No pudimos instalar dependencias."
+        echo "Asegúrese de tener git, python3, pip3 y los requisitos instalados."
+        echo "Entonces puedes ejecutar SMS Spam."
         exit
     fi
 }
@@ -92,26 +92,26 @@ pause
 detect_distro
 init_environ
 if [ -f .update ];then
-    echo "All Requirements Found...."
+    echo "Todos los requisitos encontrados...."
 else
-    echo 'Installing Requirements....'
+    echo 'Requisitos de instalación....'
     echo .
     echo .
     install_deps
-    echo This Script Was Made By SpeedX > .update
-    echo 'Requirements Installed....'
+    echo Este guión fue creado por AnonyProArg > .update
+    echo 'Requisitos instalados....'
     pause
 fi
 while :
 do
     banner
-    echo -e "\e[4;31m Please Read Instruction Carefully !!! \e[0m"
+    echo -e "\e[4;31m Lea atentamente las instrucciones !!! \e[0m"
     echo " "
-    echo "Press 1 To  Start SMS  Bomber "
-    echo "Press 2 To  Start CALL Bomber "
-    echo "Press 3 To  Start MAIL Bomber (Not Yet Available)"
-    echo "Press 4 To  Update (Works On Linux And Linux Emulators) "
-    echo "Press 5 To  Exit "
+    echo "1) Iniciar SMS  Spam "
+    echo "2) Iniciar Llamadas Spam "
+    echo "3) Iniciar MAIL Spam (aún no disponible)"
+    echo "4) para actualizar (funciona en Linux y emuladores de Linux) "
+    echo "5) Salir "
     read ch
     clear
     if [ $ch -eq 1 ];then
@@ -124,17 +124,17 @@ do
         $PYTHON SMS-SPAM.py --mail
         exit
     elif [ $ch -eq 4 ];then
-        echo -e "\e[1;34m Downloading Latest Files..."
+        echo -e "\e[1;34m Descarga de archivos más recientes..."
         rm -f .update
         $PYTHON SMS-SPAM.py --update
-        echo -e "\e[1;34m RUN TBomb Again..."
+        echo -e "\e[1;34m inciar SMS-SPAM otra vez"
         pause
         exit
     elif [ $ch -eq 5 ];then
         banner
         exit
     else
-        echo -e "\e[4;32m Invalid Input !!! \e[0m"
+        echo -e "\e[4;32m opcion incorrecta !!! \e[0m"
         pause
     fi
 done
