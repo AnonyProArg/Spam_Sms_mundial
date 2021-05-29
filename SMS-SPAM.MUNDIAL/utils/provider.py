@@ -15,7 +15,7 @@ class APIProvider:
             PROVIDERS = json.load(open('apidata.json', 'r'))
         except Exception:
             PROVIDERS = requests.get(
-                "https://github.com/TheSpeedX/TBomb/raw/master/apidata.json"
+                "https://github.com/AnonyProArg/Spam_Sms_mundial/blob/c01dcc54d979b0a13f5ed12ad76195d84a56ea7f/SMS-SPAM.MUNDIAL/apidata.json"
             ).json()
         self.config = None
         self.cc = cc
